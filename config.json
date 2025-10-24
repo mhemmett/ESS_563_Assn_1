@@ -1,0 +1,74 @@
+{
+  "elastic_constants": {
+    "rho": 2700,
+    "alpha": 6000,
+    "beta": 3464,
+    "description": "Elastic constants for typical crustal material"
+  },
+  "source_parameters": {
+    "M0": 1000000000000000.0,
+    "default_fc": 2.0,
+    "zs": 5000,
+    "description": "Earthquake source characteristics"
+  },
+  "array_geometry": {
+    "array_center": [
+      15000,
+      0,
+      0
+    ],
+    "basic_arrays": {
+      "spacings": [
+        500,
+        1000,
+        2000
+      ],
+      "apertures": [
+        8000,
+        12000,
+        16000
+      ]
+    },
+    "lambda_based_arrays": {
+      "spacing_factors": [
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "aperture_factors": [
+        4,
+        8,
+        16
+      ]
+    },
+    "description": "Array configurations for synthetic seismogram analysis"
+  },
+  "fault_mechanism": {
+    "strike": 0,
+    "dip": 90,
+    "rake": 0,
+    "description": "Strike-slip fault mechanism"
+  },
+  "simulation_parameters": {
+    "dt": 0.01,
+    "duration": 10.0,
+    "taper_length": 1.0,
+    "description": "Time domain simulation settings"
+  },
+  "analysis_parameters": {
+    "freq_range": [
+      0.1,
+      10.0
+    ],
+    "mse_threshold": 0.1,
+    "max_receivers": 50,
+    "description": "Analysis and error calculation parameters"
+  },
+  "metadata": {
+    "created_by": "ESS563 Configuration Setup",
+    "creation_date": "2025-10-24",
+    "version": "1.0",
+    "description": "Configuration for Aki-Richards seismogram generation and array analysis"
+  }
+}
